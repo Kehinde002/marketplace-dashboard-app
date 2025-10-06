@@ -12,7 +12,7 @@ st.set_page_config(layout="wide", page_title="Marketplace Search Model")
 
 # 1. Define the directory path where your CSV is saved
 # We will use the current working directory, which should contain your CSV.
-FILE_PATH = '/mount/src/marketplace-dashboard-app/marketplace_dashboard_data.csv'
+FILE_PATH = 'marketplace_dashboard_data.csv' 
 
 # --- Data Loading (Phase 1/2) ---
 # Use the Streamlit cache to load data efficiently
@@ -140,4 +140,5 @@ st.markdown("""
     **Insight:** The V-shape shows **friction is lowest near the $500 equilibrium**. The **Premium Budget** segment exhibits the highest friction volatility (the largest box range), requiring specialized matching resources.
 
 """)
+
 
