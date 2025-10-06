@@ -11,8 +11,9 @@ import os
 st.set_page_config(layout="wide", page_title="Marketplace Search Model")
 
 # 1. Define the directory path where your CSV is saved
-# Use os.path.join to ensure the path is correctly built relative to the script
-BASE_DIR = os.path.dirname(__file__) # Gets the directory of the current script
+# This code uses Python's os module to guarantee the path is built correctly 
+# relative to the script's location, bypassing environment path confusion.
+BASE_DIR = os.path.dirname(__file__) 
 FILE_PATH = os.path.join(BASE_DIR, 'marketplace_dashboard_data.csv')
 
 # --- Data Loading (Phase 1/2) ---
@@ -141,6 +142,7 @@ st.markdown("""
     **Insight:** The V-shape shows **friction is lowest near the $500 equilibrium**. The **Premium Budget** segment exhibits the highest friction volatility (the largest box range), requiring specialized matching resources.
 
 """)
+
 
 
 
